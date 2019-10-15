@@ -1,0 +1,62 @@
+*{
+    font-family: Georgia;
+    
+}
+.quiz{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    padding: 20px 40px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(71, 79, 197);
+}
+
+.container{
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.quiz-questions{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+}
+.name-of-checkbox{
+    display: inherit;
+    margin: 18px;
+}
+.content{
+    margin: 0;
+    font-size: 18px;
+}
+.back-button{
+    float: left;
+}
+.buttons{
+    display: inline;
+}
+.next-button{
+    float: right;
+}
+.finish-button{
+    display: none;
+    float: right;
+}
+.question{
+    text-align: end;
+}
+div.quiz-questions > h4{
+    
+    font-style: italic;
+    margin-bottom: 15px
+}
