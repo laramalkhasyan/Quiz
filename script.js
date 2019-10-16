@@ -51,6 +51,14 @@ function unCheck() {
 
 function next() {
     if (isChecked() || currentQuestion == 0) {
+        if (currentQuestion) {
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    checkedAnswers[currentQuestion - 1] = answers[currentQuestion - 1][i];
+                }
+            }
+
+        }
         if (currentQuestion == 1) {
             document.getElementsByClassName("back-button")[0].style.display = "flex";
         }
@@ -61,9 +69,7 @@ function next() {
         let ans = document.getElementsByClassName("content");
         for (let i = 0; i < ans.length; i++) {
             ans[i].innerHTML = answers[currentQuestion][i];
-            if (checkboxes[i].checked) {
-                checkedAnswers[currentQuestion] = answers[currentQuestion][i];
-            }
+
         }
         if (currentQuestion == 4) {
             document.getElementsByClassName("next-button")[0].style.display = "none";
@@ -91,6 +97,13 @@ function back() {
 
 
 function finish() {
+    if (isClicked()){
+        for (let i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                checkedAnswers[currentQuestion - 1] = answers[currentQuestion - 1][i];
+            }
+        }
+    }
     document.getElementsByClassName("quiz-questions")[0].style.display = "none";
     document.getElementsByClassName("score-num")[0].innerHTML += score;
     let finishedQuestions = document.getElementsByClassName("f-question");
@@ -102,3 +115,4 @@ function finish() {
         userAnswers[i].innerHTML = checkedAnswers[i];
     }
 }
+    
