@@ -1,13 +1,14 @@
-*{
+* {
     font-family: Georgia;
-    
 }
-.quiz{
+
+.quiz {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-button{
+
+button {
     padding: 20px 40px;
     font-size: 16px;
     border-radius: 20px;
@@ -15,53 +16,73 @@ button{
     background-color: rgb(71, 79, 197);
 }
 
-.container{
+.container {
     flex-direction: column;
     margin-top: 40px;
     text-align: center;
 }
 
-.quiz-questions{
-    display: none;
+.quiz-questions {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
 }
 
-.checkbox{
+.checkbox {
     display: flex;
     flex-direction: column;
 }
-.name-of-checkbox{
+
+.name-of-checkbox {
     display: inherit;
     margin: 18px;
 }
-.content{
+
+.content {
     margin: 0;
     font-size: 18px;
 }
-.back-button{
+
+.back-button {
     float: left;
 }
-.buttons{
+
+.buttons {
     display: inline;
 }
-.next-button{
+
+.next-button,
+.retake-button {
     float: right;
 }
-.finish-button{
+
+.finish-button {
     display: none;
     float: right;
 }
-.question{
+
+.question {
     text-align: end;
 }
-div.quiz-questions > h4{
-    
+
+div.quiz-questions>h4 {
     font-style: italic;
     margin-bottom: 15px
 }
 
-h5{
+h5 {
     font-size: 25px;
+}
+
+.finished-container {
+    flex-direction: column;
+}
+
+.score-num {
+    text-align: end;
+    font-size: 18px;
+}
+
+div.answers>p {
+    font-size: 18px;
 }
