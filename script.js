@@ -37,10 +37,10 @@ function start() {
 
 function isChecked() {
     let isChecked = 0;
-
     for (let i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i].checked) {
             isChecked++
+            break
         }
     }
     return isChecked != 0 ? true : false;
