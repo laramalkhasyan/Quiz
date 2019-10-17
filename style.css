@@ -6,26 +6,47 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    
+   
 }
 
 button {
     padding: 20px 40px;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 20px;
-    color: white;
-    background-color: rgb(71, 79, 197);
+    color: #fff;
+    background-color:#8860d0;
 }
-
+#username{
+    margin: 15px;
+    border-radius: 30px;
+    font-size: 18px;
+}
 .container {
     flex-direction: column;
-    margin-top: 40px;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 30px;
     text-align: center;
+    background-color: #ff8f8f;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), 0 2rem 3rem rgba(0,0,0,.1);
+}
+
+div.container>p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
 }
 
 .quiz-questions {
-    margin-top: 40px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
+    background-color: #ff8f8f;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), 0 2rem 3rem rgba(0,0,0,.1);
 }
 
 .checkbox {
@@ -40,7 +61,9 @@ button {
 
 .content {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
+    color: #8860d0;
+    font-weight: bold;
 }
 
 .back-button {
@@ -65,24 +88,36 @@ button {
     text-align: end;
 }
 
-div.quiz-questions>h4 {
+div.question>h4 {
+    color: #fff;
     font-style: italic;
     margin-bottom: 15px
 }
 
 h5 {
     font-size: 25px;
+    color: #8860d0;
 }
 
 .finished-container {
     flex-direction: column;
+    background-color: #ff8f8f;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), 0 2rem 3rem rgba(0,0,0,.1);
 }
 
 .score-num {
     text-align: end;
     font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
 }
 
 div.answers>p {
     font-size: 18px;
+    font-weight: 600;
+    color: #fff;
 }
